@@ -8,9 +8,25 @@ console.log(vetor)
 console.log(vetor.pop())
 console.log(vetor)
 
+
+
+console.log('===============================================================================')
+
+
 const Stack = () =>{
     const data = []
     let top = -1
 
-    return 
+    const push = (value)=>{
+        top++
+        data[top] = value;
+        console.log(data)
+    }
+    return {
+        push
+    }
 }
+
+const stack1 = Stack()
+stack1.push(1)
+stack1.push(2)
